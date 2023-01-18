@@ -1,0 +1,39 @@
+###
+GET http://localhost:3001/api/check
+content-type: application/json
+
+###
+POST http://localhost:3001/api/tasks
+content-type: application/json
+
+{
+    "title": "Todo title",
+    "description": "Todo description",
+    "done": false
+}
+
+###
+GET http://localhost:3001/api/tasks
+content-type: application/json
+
+###
+GET http://localhost:3001/api/tasks/all
+content-type: application/json
+
+###
+GET http://localhost:3001/api/tasks/1
+content-type: application/json
+
+###
+PUT http://localhost:3001/api/tasks/1
+content-type: application/json
+
+{
+    "title": "Task title",
+    "description": "Task description",
+    "done": true
+}
+
+###
+DELETE http://localhost:3001/api/tasks/1
+content-type: application/json
